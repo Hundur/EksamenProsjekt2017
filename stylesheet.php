@@ -11,6 +11,14 @@
     background-repeat: no-repeat;
 }
 
+#overskrift
+{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
 .menucircle
 {
     position: fixed;
