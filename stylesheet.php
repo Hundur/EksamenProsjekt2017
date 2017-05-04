@@ -62,7 +62,7 @@ box-shadow: 6px 10px 49px -9px #333;
 #menucircle1
 {
     left: 21%;
-    top: 210px;
+    top: 31%;
     text-algin: center;
     background-color: #7d5179;
 }
@@ -70,26 +70,26 @@ box-shadow: 6px 10px 49px -9px #333;
 #menucircle2
 {
     left: 32%;
-    top: 335px;
+    top: 49.6%;
     background-color: #6aafc8;
 }
 
 #menucircle3 {
-    margin-left: 563px;
-    top: 230px;
+    margin-left: 44%;
+    top: 32%;
 }
 
 #menucircle4
 {
     right: 32%;
-    top: 335px;
+    top: 49.6%;
     background-color: #ffd460;
 }
 
 #menucircle5
 {
     right: 21%;
-    top: 210px;
+    top: 31%;
 background-color: #8ac394;
 }
 
@@ -113,10 +113,14 @@ html, body
 
 /* CSS Footer Menu */
 
-
-#footer {
-  float: right;
+.footer {
   position: absolute;
+  right: 0;
+  bottom: -300px;
+  left: 0;
+  padding: 5rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 
@@ -158,3 +162,8 @@ nav li a {
 
 }
 
+#logo { 
+   position: absolute; 
+   bottom: 40px; 
+   background-color: red;
+}

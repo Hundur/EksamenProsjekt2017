@@ -21,6 +21,7 @@ include_once('header.php');
 			
 			</div>  <!-- End of main navbar -->
 
+
 			<?php 
 		include_once('footer.php');
 ?>

@@ -1,1 +1,6 @@
-<p id="image"><img src="img/ww.png"></p> 
+<div class="footer">
+
+<img src="img/ww.png" id="logo">
+
+
+</div>
