@@ -8,9 +8,11 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-image:url('Vulkan.jpg'); 
+    background-image:url('img/Vulkan.jpg'); 
     background-repeat: no-repeat;
 }
+
+/* CSS main-navbar */
 
 .menutext {
 
@@ -45,7 +47,7 @@ font-size: 1.2em;
 
 .menucircle
 {
-   text-align: center;
+    text-align: center;
     position: fixed;
     height: 150px;
     width: 150px;
@@ -73,7 +75,7 @@ box-shadow: 6px 10px 49px -9px #333;
 }
 
 #menucircle3 {
-    margin-left: 544px;
+    margin-left: 563px;
     top: 230px;
 }
 
@@ -91,6 +93,13 @@ box-shadow: 6px 10px 49px -9px #333;
 background-color: #8ac394;
 }
 
+#icons {
+ position: absolute;
+    
+}
+
+
+/* CSS body style */
 
 
 html, body
@@ -101,36 +110,51 @@ html, body
     padding: 0px;
 }
 
-#overskrift {
-text-align: center;
-float: left;
-position: absolute;
-left: 22.2%;
-top: 30px;
-font-size: 4.3em;
-color: beige;
-text-transform: none;
-letter-spacing: 0.2pt;
-width: 700px;
-font-weight: 300;
-}
 
-#image {
-  float: left;
+/* CSS Footer Menu */
+
+
+#footer {
+  float: right;
   position: absolute;
-  left: 588px;
-  bottom: 19%;
+}
+
+
+nav {
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	height: 0px;
+	background: #6aafc8;
+    opacity: 0.8;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0px 35px;
+}
+
+nav li a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.2pt;
+    text-decoration: none;
+	color: #f1f1f1;
+	text-transform: uppercase;
+}
+
+
+/* For mobile, Ipad */
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
 
 }
 
-#icons {
- position: absolute;
-    
-}
-
-line {
-    position: absolute;
-    display: block;
-    border-bottom: 1px #fff;
-    left:150px;
-}
