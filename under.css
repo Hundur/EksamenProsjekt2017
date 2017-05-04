@@ -1,0 +1,178 @@
+html {
+    background-image: url("bilder/bakgrunn.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+
+h3{
+    margin: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p{
+    position: static;
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+    font-weight: 600;
+    font-size: 70px;
+    margin-left: 200px;
+}
+
+#container {
+    background: #8bad83;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left:  280px;
+    margin-top: 330px;
+    max-width: 1400px;
+    height: 620px;
+    opacity: 0.8;
+}
+
+#hovedboks {
+    background: #cce8c5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 150px;
+    margin-left: 280px;
+    height: 180px;
+    width: 1400px;
+    opacity: 0.8;
+}
+
+
+#boks1 {
+    background: white;
+    position: absolute;
+    top: 370px;
+    margin-left: 330px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+#kontrast{
+    height: 130px;
+    margin-left: 230px;
+    position: absolute;
+}
+
+#boks2 {
+    background: white;
+    position: absolute;
+    top: 370px;
+    margin-left: 780px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+#boks3 {
+    background: white;
+    position: absolute;
+    top: 370px;
+    margin-left: 1230px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+#boks4 {
+    background: white;
+    position: absolute;
+    top: 660px;
+    margin-left: 330px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+#boks5 {
+    background: white;
+    position: absolute;
+    top: 660px;
+    margin-left: 780px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+#boks6 {
+    background: white;
+    position: absolute;
+    top: 660px;
+    margin-left: 1230px;
+    height: 250px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+
+#blue {
+    position: absolute;
+    top: 120px;
+    height: 250px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#yellow {
+    position: absolute;
+    top: 300px;
+    height: 250px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#red {
+    position: absolute;
+    top: 480px;
+    height: 250px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#purple {
+    position: absolute;
+    top: 660px;
+    height: 250px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#greenball{
+    position: absolute;
+    
+}
+
+#mat{
+    position: absolute;
+    height: 170px;
+    top: 0px;
+    margin-left: 1200px;
+}
+
+#dollar{
+    position: absolute;
+    margin-left: 20px;
+    height: 50px;
+    top: 190px;
+}
+#dollar1{
+    position: absolute;
+    margin-left: 75px;
+    height: 50px;
+    top: 190px;
+}
+#dollar2{
+    position: absolute;
+    margin-left: 130px;
+    height: 50px;
+    top: 190px;
+}
+
