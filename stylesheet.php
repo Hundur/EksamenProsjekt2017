@@ -3,18 +3,18 @@
 ?>
 
 
-#container
+html 
 {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-image:url('img/Vulkan.jpg'); 
+    background-image: url('img/vulkan.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 /* CSS main-navbar */
 
-.menutext {
+.menutext
+{
 
   float: left;
   width: 100%;
@@ -24,13 +24,15 @@
   margin-top: -0.5em;
 }
 
-#menutext1 {
+#menutext1 
+{
 
 padding-top: 28%;
 line-height: 1.5em;
 }
 
-.menutext a {
+.menutext a 
+{
 text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -39,7 +41,8 @@ text-decoration: none;
   font-family: 'Oswald', sans-serif; 
 }
 
-.menutext a:hover {
+.menutext a:hover
+{
 letter-spacing: 1.7pt;
 font-weight: 400;
 font-size: 1.2em;
@@ -59,7 +62,7 @@ font-size: 1.2em;
 box-shadow: 6px 10px 49px -9px #333;
 }
 
-#menucircle1
+#food
 {
     left: 21%;
     top: 31%;
@@ -67,28 +70,29 @@ box-shadow: 6px 10px 49px -9px #333;
     background-color: #7d5179;
 }
 
-#menucircle2
+#transport
 {
     left: 32%;
     top: 49.6%;
     background-color: #6aafc8;
 }
 
-#menucircle3 {
-    margin-left: 44%;
+#shopping
+{
+    margin-left: 43%;
     top: 32%;
 }
 
-#menucircle4
+#activities
 {
-    right: 32%;
+    left: 54%;
     top: 49.6%;
     background-color: #ffd460;
 }
 
-#menucircle5
+#arrangement
 {
-    right: 21%;
+    left: 65%;
     top: 31%;
 background-color: #8ac394;
 }
@@ -113,10 +117,12 @@ html, body
 
 /* CSS Footer Menu */
 
-.footer {
+.footer
+{
   position: absolute;
   right: 0;
   bottom: -300px;
+  width: 100%;
   left: 0;
   padding: 5rem;
   background-color: #efefef;
@@ -124,7 +130,8 @@ html, body
 }
 
 
-nav {
+nav
+{
 	position: absolute;
 	bottom: 100px;
 	width: 100%;
@@ -133,12 +140,14 @@ nav {
     opacity: 0.8;
 }
 
-nav li {
+nav li 
+{
 	display: inline-block;
 	padding: 0px 35px;
 }
 
-nav li a {
+nav li a
+{
     font-family: 'Oswald', sans-serif;
     font-size: 0.7em;
     letter-spacing: 0.2pt;
@@ -152,17 +161,20 @@ nav li a {
 
 @media only screen and (max-width: 520px) {
 
-	nav li {
+	nav li
+    {
 		padding: 24px 4px;
 	}
 
-	nav li a {
+	nav li a 
+    {
 		font-size: 14px;
 	}
 
 }
 
-#logo { 
+#logo 
+{ 
    position: absolute; 
    bottom: 40px; 
    background-color: red;
