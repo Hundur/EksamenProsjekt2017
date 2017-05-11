@@ -22,7 +22,7 @@
     float: left;
     width: 100%;
     padding-top: 25%;
-    font-size: 0.7em;
+    font-size: 0.5em;
     line-height: 2.3em;
     margin-top: -0.5em;
 }
@@ -56,6 +56,14 @@
     -webkit-box-shadow: 6px 10px 49px -9px #333;
     -moz-box-shadow: 6px 10px 49px -9px #333;
     box-shadow: 6px 10px 49px -9px #333;
+    height: 100px;
+    width: 100px;
+}
+
+.picU
+{
+    max-width: 50%;
+    max-height: 50%;
 }
 
 #food
@@ -70,28 +78,28 @@
 #transport
 {
     left: 3%;
-    top: 25%;
+    top: 27.5%;
     background-color: #6aafc8;
 }
 
 #shopping
 {
     margin-left: 3%;
-    top: 40%;
+    top: 45%;
     background-color: #ff5252;
 }
 
 #activities
 {
     left: 3%;
-    top: 55%;
+    top: 62.5%;
     background-color: #ffd460;
 }
 
 #arrangement
 {
     left: 3%;
-    top: 70%;
+    top: 80%;
     background-color: #8ac394;
 }
 
@@ -106,7 +114,7 @@ html
 
 #icons
 {
- position: absolute;  
+    position: absolute;  
 }
 
 /* CSS body style */
