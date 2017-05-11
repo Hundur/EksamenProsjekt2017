@@ -8,11 +8,11 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    background-image:url('img/Vulkan.jpg');
+    background-image:url('img/Vulkan1.jpg');
     background-repeat: no-repeat;
 }
 
-/* CSS circle-navbar */
+/* Circle-navbar for frontpage */
 
 #heading {
     position: absolute;
@@ -61,14 +61,48 @@
     transition: all 200ms linear;
 }
 
-/* For underpages */ 
+/* Circle-navbar frontpage Responsive */ 
 
-.menucircle2 
-{ 
-    position: fixed;
+@media screen and (max-width: 480px) {
+#heading {
+    left: 5%;
+
+}    
+.menucircle {
+        height: 60px;
+        width: 60px;
+        border: 2px solid transparent;
+    }
+}
+
+/* Circle-navbar for underpages */ 
+
+.menutext2 {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.5pt;
+    font-family: 'Oswald', sans-serif; 
+    float: left;
+    width: 100%;
+    padding-top: 25%;
+    font-size: 0.5em;
+    line-height: 2.3em;
+    margin-top: -0.5em;
+}
+
+#menutext21 {
+    padding-top: 28%;
+    line-height: 1.5em;
+}
+
+.menucircle2 { 
+ position: fixed;
     text-align: center;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
+    top: 15%;
     border-radius: 200px;
     border: 2px dotted white;
     -webkit-transition: all 200ms linear;
@@ -78,124 +112,90 @@
     transition: all 200ms linear;
 }
 
-@media screen and (max-width: 480px) 
-{
-    #heading 
-    {
-        left: 5%;
-
-    }    
-    .menucircle 
-    {
-        height: 60px;
-        width: 60px;
-        border: 2px solid transparent;
-    }
-}
-
-.menucircle2:hover 
-{
+.menucircle2:hover {
     font-weight: 500;
     border: 2px solid transparent;
 }
 
-#menucircle21 
-{
-    left: 3%;
-    top: 12%;
+#food2 {
+    left: 29%;
     text-algin: center;
-    background-color: #transparent;
+    background-color: #7d5179;
 }
 
-#menucircle22 
-{
-    left: 3%;
-    top: 30%;
+#transport2 {
+    left: 38%;
+    background-color: #6aafc8;;
 }
 
-#menucircle23 
-{
-    margin-left: 3%;
-    top: 48%;
+#shopping2 {
+   left: 46.9%;
+   background-color: #ff5252;
 }
 
-#menucircle24 
-{
-    left: 3%;
-    top: 59;
+#activities2 {
+    right: 37.0%;
+    background-color: #ffd460;
 }
 
-#menucircle25 
-{
-    left: 8%
-    bottom: 15%;
+#arrangement2 {
+    right: 28%;
+    background-color: #8ac394;
 }
 
-#icons
-{
+#icons {
     position: absolute;
 }
 
-@media screen and (max-width: 480px) 
-{
-    #heading 
-    {
-        left: 5%;
+@media screen and (max-width: 480px) {
+#heading {
+    left: 5%;
 
-    }    
-    .menucircle2 
-    {
+}    
+.menucircle2 {
         height: 60px;
         width: 60px;
         border: 2px solid transparent;
     }
 }
 
-.menucircle a 
-{
+.menucircle a {
     background-color: red;
 }
 
-.menucircle:hover 
-{
+.menucircle:hover {
     font-weight: 500;
     border: 2px solid transparent;
 }
 
-#menucircle1 
-{
+#food {
     left: 22%;
     top: 41%;
     text-algin: center;
     background-color: #transparent;
 }
 
-#menucircle2 
-{
+#transport {
     left: 33%;
     top: 59.6%;
 }
 
-#menucircle3 
-{
+#shopping {
     margin-left: 44.2%;
     top: 41%;
 }
 
-#menucircle4 
-{
+#activities {
     right: 33%;
     top: 59.6%;
 }
 
-#menucircle5 
-{
+#arrangement {
     right: 22%;
     top: 41%;
 }
 
-#icons 
-{
+#icons {
     position: absolute;
 }
 
@@ -203,8 +203,7 @@
 /* Html, body */
 
 
-html, body 
-{
+html, body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -213,164 +212,150 @@ html, body
 
 /* Navigation-bar */ 
  
-html,
-body,
-h1,
-ol,
-ul 
-{
+ html,
+ body,
+ h1,
+ ol,
+ ul {
     margin: 0;
     padding: 0;
  }
  
-ul,
-ol 
-{
+ ul,
+ ol {
     list-style: none;
-}
+ }
  
-a 
-{
+ a {
     text-decoration: none;
-}
+ }
  
-.clearfix 
-{
+ .clearfix {
     clear: both;
-}
+ }
 
  /* End Reset Some Elements */
  
-.nav 
-{
+ .nav {
     background-color: #fff;
     opacity: 0.9;
-}
+ }
  
-.container 
-{
+ .container {
     width: 65%;
     margin: 0 auto;
-}
+ }
 
  /* Start Toggle */
  
   
-.toggle 
-{
+ .toggle {
     width: 30px;
     padding-top: 15px;
     float: right;
     margin: 6px;
     cursor: pointer;
     display: none;
-} 
+ } 
  
-.toggle span 
-{
+ .toggle span {
     width: 100%;
     height: 4px;
     background-color: #222;
     display: block;
     margin-bottom: 3px;
-}
+ }
 
  /* End Toggle */
 
  /* Start Logo */
  
 
-.nav .container .logo 
-{
+ .nav .container .logo {
     width: 25%;
     float: left;
     padding-top: 0px;
     padding-bottom: 4px;
-}
+ }
  
 
  /* End Logo */
 
+/* Start Title */
+
+#title {
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  text-transform: uppercase;
+  font-family: Raleway; 
+}
+
+/* End Title */
+
  /* Start Links */
  
-.nav .container .links 
-{
+ .nav .container .links {
     width: 45%;
     float: right;
-}
+ }
  
-.nav .container .links ul 
-{
+ .nav .container .links ul {
     float: center;
-}
+ }
  
-.nav .container .links ul li 
-{
+ .nav .container .links ul li {
     display: inline-block;
     padding: 20px;
-}
+ }
  
-.nav .container .links ul li a 
-{
+ .nav .container .links ul li a {
     color: #333;
     font-size: 0.7em;
     font-family: Raleway;
     text-transform: uppercase;
     letter-spacing: 0.8pt;
-}
+ }
 
-.nav .container .links ul li a:hover 
-{
+.nav .container .links ul li a:hover {
    color: #f1f1f1;
    padding: 10px 0 10px;
 }
  /* End Links */
 
-@media(max-width:768px) 
-{
-    .toggle 
-    {
-        display: block;
+ @media(max-width:768px) {
+    .toggle {
+       display: block;
     }
-    .links 
-    {
-        display: none;
+    .links {
+       display: none;
     }
-    .nav .container .links ul li 
-    {
-        display: block;
-        text-align: center;
-        padding: 10px;
+    .nav .container .links ul li {
+       display: block;
+       text-align: center;
+       padding: 10px;
     }
-    .nav .container .links ul 
-    {
-        float: none;
+    .nav .container .links ul {
+       float: none;
     }
-    .nav .container .logo 
-    {
-        padding-top: 10px;
+    .nav .container .logo {
+       padding-top: 10px;
     }
-}
+ }
 
 
 <script>
 
 /* Javascript goes here */ 
 
-$(document).ready(function() 
-{
-    $(".toggle").click(function() 
-    {
-        $('.links').slideToggle();
+$(document).ready(function() {
+    $(".toggle").click(function() {
+       $('.links').slideToggle();
     });
-    $(window).resize(function() 
-    {
-       if ($(window).width() > 768) 
-       {
-           $('.links').show();
-       } 
-        else 
-       {
+    $(window).resize(function() {
+       if ($(window).width() > 768) {
+          $('.links').show();
+       } else {
           $('.links').hide();
        }
     });
