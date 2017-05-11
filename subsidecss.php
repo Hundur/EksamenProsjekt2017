@@ -8,12 +8,15 @@
 
 #container
 {
-    background: #ebd9f9;
+    position: fixed;
     width:  70%;
-    top: 40%;
-    margin: auto;
-    height: 800px;
+    top: 10%;
+    left: 15%;
+    height: 600px;
+    background: white;
+    border: 2px dotted white;
     opacity: 1;
+    overflow: hidden;
 }
 
 .menutext
@@ -52,7 +55,7 @@
     width: 130px;
     border-radius: 200px;
     background-color: #FFFFFF;
-    opacity: 0.8;
+    opacity: 1;
     -webkit-box-shadow: 6px 10px 49px -9px #333;
     -moz-box-shadow: 6px 10px 49px -9px #333;
     box-shadow: 6px 10px 49px -9px #333;
