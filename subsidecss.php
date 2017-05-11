@@ -19,29 +19,29 @@
 .menutext
 {
 
-  float: left;
-  width: 100%;
-  padding-top: 25%;
-  font-size: 0.7em;
-  line-height: 2.3em;
-  margin-top: -0.5em;
+    float: left;
+    width: 100%;
+    padding-top: 25%;
+    font-size: 0.7em;
+    line-height: 2.3em;
+    margin-top: -0.5em;
 }
 
 .menutext a 
 {
-text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 1.7pt;
-  font-family: 'Oswald', sans-serif; 
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.7pt;
+    font-family: 'Oswald', sans-serif; 
 }
 
 .menutext a:hover 
 {
-letter-spacing: 1.7pt;
-font-weight: 400;
-font-size: 1.2em;
+    letter-spacing: 1.7pt;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
 .menucircle
@@ -53,9 +53,9 @@ font-size: 1.2em;
     border-radius: 200px;
     background-color: #FFFFFF;
     opacity: 0.8;
--webkit-box-shadow: 6px 10px 49px -9px #333;
--moz-box-shadow: 6px 10px 49px -9px #333;
-box-shadow: 6px 10px 49px -9px #333;
+    -webkit-box-shadow: 6px 10px 49px -9px #333;
+    -moz-box-shadow: 6px 10px 49px -9px #333;
+    box-shadow: 6px 10px 49px -9px #333;
 }
 
 #food
@@ -152,7 +152,8 @@ nav li
 	padding: 0px 35px;
 }
 
-nav li a {
+nav li a 
+{
     font-family: 'Oswald', sans-serif;
     font-size: 0.7em;
     letter-spacing: 0.2pt;
