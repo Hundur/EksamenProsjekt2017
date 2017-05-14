@@ -2,17 +2,48 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
-
 #container {
     position: fixed;
+    width:  80%;
+    top: 15%;
+    left: 12%;
+    height: 500px;
+    background: #f1f1f1;
+    border: 2px dotted white;
+    opacity: 1;
     overflow: hidden;
-    height: 100%;
-    width: 100%;
-    background-image:url('img/Vulkan1.jpg');
-    background-repeat: no-repeat;
 }
 
-/* Circle-navbar for frontpage */
+.textbox
+{
+    background: rgba(255,255,255,0.4);
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    right: 5%;
+    height: 60%;
+    width: 70%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+h4 { 
+  font-weight: 600;
+  text-align: center;
+}
+
+html {
+    background-image: url('img/Vulkan1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Raleway', sans-serif;
+}
 
 #heading {
     position: absolute;
@@ -26,6 +57,16 @@
     text-transform: uppercase;
     letter-spacing: 4pt;
 }
+
+/* Circle-navbar for frontpage */
+
+/* For images inside circles */
+
+#icons {
+    position: absolute;
+}
+
+/* For text inside circles */
 
 .menutext {
     color: white;
@@ -92,19 +133,13 @@
     margin-top: -0.5em;
 }
 
-#menutext21 {
-    padding-top: 28%;
-    line-height: 1.5em;
-}
 
 .menucircle2 { 
  position: fixed;
     text-align: center;
     height: 90px;
     width: 90px;
-    top: 15%;
     border-radius: 200px;
-    border: 2px dotted white;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -o-transition: all 200ms linear;
@@ -118,33 +153,38 @@
 }
 
 #food2 {
-    left: 29%;
+    left: 3%;
+    top: 15%;
     text-algin: center;
     background-color: #7d5179;
 }
 
 #transport2 {
-    left: 38%;
-    background-color: #6aafc8;;
+    left: 3%;
+    top: 31.5%;
+    background-color: #6aafc8;
 }
 
 #shopping2 {
-   left: 46.9%;
-   background-color: #ff5252;
+    margin-left: 3%;
+    top: 48%;
+    background-color: #ff5252;
 }
 
 #activities2 {
-    right: 37.0%;
+    left: 3%;
+    top: 64.5%;
     background-color: #ffd460;
 }
 
 #arrangement2 {
-    right: 28%;
+    left: 3%;
+    top: 80.5%;
     background-color: #8ac394;
 }
 
-#icons {
-    position: absolute;
+/* End of circle-navbar for underpages */ 
+
 }
 
 @media screen and (max-width: 480px) {
@@ -203,13 +243,6 @@
 /* Html, body */
 
 
-html, body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
-
-
 /* Navigation-bar */ 
  
  html,
@@ -237,8 +270,8 @@ html, body {
  /* End Reset Some Elements */
  
  .nav {
-    background-color: #fff;
-    opacity: 0.9;
+    background-color: #f1f1f1;
+    opacity: 1;
  }
  
  .container {
