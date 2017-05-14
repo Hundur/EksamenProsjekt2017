@@ -3,7 +3,7 @@
     <head>
 		<!-- Stylesheet link -->
 
-		<link rel = "stylesheet" type = "text/css" href = "stylesheet.php" /> 
+		<link rel = "stylesheet" type = "text/css" href = "style.php" /> 
 
         <!-- Google font Import --> 
 
