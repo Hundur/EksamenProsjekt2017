@@ -2,38 +2,56 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
+
+/* Font-family */
+
+html, 
+#heading,
+#title,
+h2, 
+h3,
+h4,
+p {
+  font-family: 'Raleway', sans-serif;
+} 
+
+
 #container {
     position: fixed;
-    width:  80%;
+    width: 78%;
     top: 15%;
-    left: 12%;
+    left: 13%;
     height: 500px;
     background: #f1f1f1;
-    border: 2px dotted white;
+    border: 4px solid #ccc;
     opacity: 1;
     overflow: hidden;
 }
 
+
+/* Slider */ 
+
 .textbox
 {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.9);
     position: absolute;
     bottom: 5%;
-    left: 15%;
-    right: 5%;
+    left: 9%;
+    right: 9%;
     height: 60%;
-    width: 70%;
+    width: 80%;
     padding: 20px;
     overflow: hidden;
 }
 
-p {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 300;
+p a {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: -0.1pt;
 }
 
-h4 { 
-  font-weight: 600;
+h3, p { 
+  font-weight: 300;
   text-align: center;
 }
 
@@ -42,29 +60,31 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family: 'Raleway', sans-serif;
 }
 
 #heading {
     position: absolute;
-    font-family: Raleway;
     color: #f1f1f1;
-    top: 25%;
-    left: 36.5%;
-    font-size: 2.3em;
+    top: 27%;
+    left: 32.5%;
+    font-size: 2.2em;
     font-weight: 200;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4pt;
 }
 
+
 /* Circle-navbar for frontpage */
 
+
 /* For images inside circles */
+
 
 #icons {
     position: absolute;
 }
+
 
 /* For text inside circles */
 
@@ -88,19 +108,65 @@ html {
     line-height: 1.5em;
 }
 
+
+/* Circles */ 
+
 .menucircle {
     position: fixed;
     text-align: center;
-    height: 135px;
-    width: 135px;
+    height: 145px;
+    width: 145px;
     border-radius: 200px;
-    border: 2px dotted white;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -o-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
     transition: all 200ms linear;
+    opacity: 0.8;
 }
+
+.menucircle:hover {
+    border: 2px dashed #f1f1f1;
+}
+
+
+#food {
+    left: 22%;
+    top: 41%;
+    text-algin: center;
+    background-color: #7d5179;
+}
+
+#transport {
+    left: 33%;
+    top: 59.6%;
+    background-color: #6aafc8;
+}
+
+#shopping {
+    margin-left: 44.2%;
+    top: 41%;
+    background-color: #ff5252;
+}
+
+#activities {
+    right: 33%;
+    top: 59.6%;
+    background-color: #ffd460;
+}
+
+#arrangement {
+    right: 22%;
+    top: 41%;
+    background-color: #8ac394;
+}
+
+#icons {
+    position: absolute;
+}
+
+/* End circle-navbar frontpage */ 
+
 
 /* Circle-navbar frontpage Responsive */ 
 
@@ -116,29 +182,15 @@ html {
     }
 }
 
+
 /* Circle-navbar for underpages */ 
-
-.menutext2 {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1.5pt;
-    font-family: 'Oswald', sans-serif; 
-    float: left;
-    width: 100%;
-    padding-top: 25%;
-    font-size: 0.5em;
-    line-height: 2.3em;
-    margin-top: -0.5em;
-}
-
 
 .menucircle2 { 
  position: fixed;
     text-align: center;
-    height: 90px;
-    width: 90px;
+    height: 55px;
+    width: 55px;
+    border: 10px dashed #transparent;
     border-radius: 200px;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
@@ -148,38 +200,38 @@ html {
 }
 
 .menucircle2:hover {
-    font-weight: 500;
-    border: 2px solid transparent;
+    height: 60px;
+    width: 60px;
 }
 
 #food2 {
-    left: 3%;
-    top: 15%;
+    top: 27%;
+    left: 4%;
     text-algin: center;
     background-color: #7d5179;
 }
 
 #transport2 {
-    left: 3%;
-    top: 31.5%;
+    top: 37.5%;
+    left: 4%;
     background-color: #6aafc8;
 }
 
 #shopping2 {
-    margin-left: 3%;
     top: 48%;
+    left: 4%;
     background-color: #ff5252;
 }
 
 #activities2 {
-    left: 3%;
-    top: 64.5%;
+    top: 58.5%;
+    left: 4%;
     background-color: #ffd460;
 }
 
 #arrangement2 {
-    left: 3%;
-    top: 80.5%;
+    top: 69%;
+    left: 4%;
     background-color: #8ac394;
 }
 
@@ -199,55 +251,15 @@ html {
     }
 }
 
-.menucircle a {
-    background-color: red;
-}
-
-.menucircle:hover {
-    font-weight: 500;
-    border: 2px solid transparent;
-}
-
-#food {
-    left: 22%;
-    top: 41%;
-    text-algin: center;
-    background-color: #transparent;
-}
-
-#transport {
-    left: 33%;
-    top: 59.6%;
-}
-
-#shopping {
-    margin-left: 44.2%;
-    top: 41%;
-}
-
-#activities {
-    right: 33%;
-    top: 59.6%;
-}
-
-#arrangement {
-    right: 22%;
-    top: 41%;
-}
-
-#icons {
-    position: absolute;
-}
+/* End circle-navbar for underpages */
 
 
 /* Html, body */
 
 
+
 /* Navigation-bar */ 
- 
- html,
- body,
- h1,
+
  ol,
  ul {
     margin: 0;
@@ -269,7 +281,8 @@ html {
 
  /* End Reset Some Elements */
  
- .nav {
+ 
+.nav {
     background-color: #f1f1f1;
     opacity: 1;
  }
@@ -301,32 +314,35 @@ html {
 
  /* End Toggle */
 
- /* Start Logo */
- 
+
+
+/* Start Logo */
 
  .nav .container .logo {
-    width: 25%;
+    width: 5%;
     float: left;
     padding-top: 0px;
     padding-bottom: 4px;
  }
  
+/* End Logo */
 
- /* End Logo */
+
 
 /* Start Title */
 
 #title {
   display: inline-block;
-  padding: 20px;
+  padding: 23px;
   float: left;
   text-transform: uppercase;
-  font-family: Raleway; 
 }
 
 /* End Title */
 
- /* Start Links */
+ 
+
+/* Start Links */
  
  .nav .container .links {
     width: 45%;
@@ -356,7 +372,9 @@ html {
 }
  /* End Links */
 
- @media(max-width:768px) {
+ 
+
+@media(max-width:768px) {
     .toggle {
        display: block;
     }
@@ -378,7 +396,6 @@ html {
 
 
 <script>
-
 /* Javascript goes here */ 
 
 $(document).ready(function() {
@@ -395,5 +412,4 @@ $(document).ready(function() {
 });
 	
 /* Javascript End */ 
-
 	</script>
