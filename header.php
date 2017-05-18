@@ -3,9 +3,9 @@
 <div class="nav">
 <div class="container">
 <div class="logo">
-<h1><img src="img/icons/ww.png"></h1>
+	<h1><a href="index.php"><img src="img/icons/ww.png"></a></h1>
 	</div>
-	<div id="title">Vulkan <b>Guiden</b></div>
+	<div id="title"><a href="index.php">Westerdals<b>Vulkan</b></a></div>
 <div class="toggle">
   <span></span>
   <span></span>
