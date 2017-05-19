@@ -15,38 +15,117 @@ p {
   font-family: 'Raleway', sans-serif;
 } 
 
+/* Slider */ 
 
-#container {
-    position: fixed;
-    width: 78%;
-    top: 15%;
-    left: 13%;
-    height: 500px;
+* {box-sizing:border-box}
+
+
+/* Slideshow container */
+
+.slide-container {
+   position: fixed;
+    width: 64%;
+    top: 19%;
+    left: 18%;
+    height: 470px;
     background: #f1f1f1;
-    border: 4px solid #ccc;
+    border: 1px dashed #f1f1f1;
+    outline: 1px solid white;
+    outline-offset: 6px;
     opacity: 1;
     overflow: hidden;
 }
+  
+img {
+    opacity: 0.8;
+}
 
+.Slide {
+    display: none;
+}
 
-/* Slider */ 
+/* Forward and back buttons */
+
+.back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.forward {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover effect */
+
+.back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Textbox */
 
 .textbox
 {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.7);
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 9%;
     right: 9%;
-    height: 60%;
+    height: 70%;
     width: 80%;
-    padding: 20px;
+    padding: 40px;
     overflow: hidden;
 }
 
+
+.dots {
+  cursor:pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Slider End */ 
+
 p a {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
   letter-spacing: -0.1pt;
 }
 
@@ -65,9 +144,9 @@ html {
 #heading {
     position: absolute;
     color: #f1f1f1;
-    top: 27%;
+    top: 25%;
     left: 32.5%;
-    font-size: 2.2em;
+    font-size: 2.1em;
     font-weight: 200;
     text-align: center;
     text-transform: uppercase;
@@ -116,19 +195,19 @@ html {
     text-align: center;
     height: 145px;
     width: 145px;
+    border: 1px dashed white;
     border-radius: 200px;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -o-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
     transition: all 200ms linear;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .menucircle:hover {
     border: 2px dashed #f1f1f1;
 }
-
 
 #food {
     left: 22%;
@@ -188,8 +267,8 @@ html {
 .menucircle2 { 
  position: fixed;
     text-align: center;
-    height: 55px;
-    width: 55px;
+    height: 59spx;
+    width: 59px;
     border: 10px dashed #transparent;
     border-radius: 200px;
     -webkit-transition: all 200ms linear;
@@ -200,38 +279,39 @@ html {
 }
 
 .menucircle2:hover {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
+    left: 6%;
 }
 
 #food2 {
-    top: 27%;
-    left: 4%;
+    top: 24%;
+    left: 0%;
     text-algin: center;
     background-color: #7d5179;
 }
 
 #transport2 {
-    top: 37.5%;
-    left: 4%;
+    top: 35.5%;
+    left: 0%;
     background-color: #6aafc8;
 }
 
 #shopping2 {
-    top: 48%;
-    left: 4%;
+    top: 47.3%;
+    left: 0%;
     background-color: #ff5252;
 }
 
 #activities2 {
-    top: 58.5%;
-    left: 4%;
+    top: 59.2%;
+    left: 0%;
     background-color: #ffd460;
 }
 
 #arrangement2 {
-    top: 69%;
-    left: 4%;
+    top: 71%;
+    left: 0%;
     background-color: #8ac394;
 }
 
@@ -299,7 +379,7 @@ html {
     width: 30px;
     padding-top: 15px;
     float: right;
-    margin: 6px;
+    margin: 3px;
     cursor: pointer;
     display: none;
  } 
@@ -322,7 +402,7 @@ html {
     width: 5%;
     float: left;
     padding-top: 0px;
-    padding-bottom: 4px;
+    padding-bottom: 0px;
  }
  
 /* End Logo */
@@ -341,7 +421,6 @@ html {
 /* End Title */
 
  
-
 /* Start Links */
  
  .nav .container .links {
