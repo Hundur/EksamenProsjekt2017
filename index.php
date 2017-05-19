@@ -17,7 +17,7 @@
 
 include_once('header.php');
 ?> 
-		    <div id="heading">Vulkan <b>Guiden</b></div>
+		<div id="heading"><a href="index.php">Westerdals<b>Vulkan</b></a></div>
 		
 			<a href="food.php" class = menucircle id = food> <p class = "menutext" id = "menutext1"><img src="img/icons/food.png" alt="icons"><br>Food & drinks</p></a>
 		
@@ -29,10 +29,12 @@ include_once('header.php');
 		
 			<a href="arrangements.php" class = menucircle id = arrangement> <p class = "menutext" id = "menutext5"><img src="img/icons/arrangement.png" alt="icons"><br>Arrangements</p></a>  <!-- End of main navbar -->
   
+		    
+		    <!-- End of container -->
+		
 		
 		<script>
-/* Jquery Code */ 
-	
+        /* Jquery Code */ 
 $(document).ready(function() {
     $(".toggle").click(function() {
        $('.links').slideToggle();
@@ -41,14 +43,12 @@ $(document).ready(function() {
        if ($(window).width() > 768) {
           $('.links').show();
        } else {
-          $('.links').hide();
-       }
+          $('.links').hide()
+       } 
     });
 });
+      </script>
 	
-</script>
-	<!-- End of container -->
-    </body>
 	
-    
+	</body>
 </html>
