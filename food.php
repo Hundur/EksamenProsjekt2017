@@ -26,9 +26,6 @@ include_once('header.php');
 			
 			<a href="activities.php" class = menucircle2 id = activities2> <p class = "menutext2" id = "menutext24"><img src="img/icons/activities-27.png" alt="icons"></p></a>
 			
-			<a href="arrangements.php" class = menucircle2 id = arrangement2> <p class = "menutext2" id = "menutext25"><img src="img/icons/arrangement-27.png" alt="icons"></p></a> 
-			
-		
 		    <!-- End of main navbar -->
 		
 		
