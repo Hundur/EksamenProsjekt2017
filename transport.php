@@ -27,11 +27,100 @@ include_once('header.php');
 			<a href="activities.php" class = menucircle2 id = activities2> <p class = "menutext2" id = "menutext24"><img src="img/icons/activities-27.png" alt="icons"></p></a>
 
 		
-		<!-- End of main navbar -->
+		<!-- End of main menu -->
 		
-			<div class="slide-container">
-            
-		</div>  <!-- End of container -->
+		
+          <div class="slide-container">
+			  
+		  <div class="Slide fade">
+          <img src="img/" style="width:100%">
+		  <div class="textbox"><h3>Olaf Ryes Plass</h3></div>
+              </div>
+
+          <div class="Slide fade">
+          <img src="img/" style="width:100%">
+          <div class="textbox"><h3>Telthusbakken</h3>
+			  <p></p></div>
+             </div>
+			  
+		  <div class="Slide fade">
+          <img src="img/" style="width:100%">
+          <div class="textbox"><h3>Schouss Plass</h3>
+			  <p></p></div>
+             </div>
+			  
+		  <div class="Slide fade">
+          <img src="img/" style="width:100%">
+          <div class="textbox"><h3>Møllerveien</h3>
+			  <p></p></div>
+             </div>
+			  
+		  
+          <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+                   
+		      <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+                    
+		             </div>  <!-- End of slider -->
+		
+		   
+		
+		 <script>
+   
+		var slideIndex = 1;
+     
+	    showSlides(slideIndex);
+
+    
+				function plusSlides(n) {
+    
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+  
+					showSlides(slideIndex = n);
+   
+				}
+
+				function showSlides(n) {
+    
+					var i;
+    
+					var slides = document.getElementsByClassName("Slide");
+    
+					var dots = document.getElementsByClassName("dot");
+   
+					if (n > slides.length) {slideIndex = 1} 
+    
+					if (n < 1) {slideIndex = slides.length}
+    
+					for (i = 0; i < slides.length; i++) {
+     
+						slides[i].style.display = "none"; 
+    
+					}
+   
+		for (i = 0; i < dots.length; i++) {
+     
+			dots[i].className = dots[i].className.replace(" active", "");
+  
+		}
+ 
+		slides[slideIndex-1].style.display = "block"; 
+  
+		dots[slideIndex-1].className += " active";
+		
+			}
+       
+    </script>
+		
 		
     </body>
 </html>

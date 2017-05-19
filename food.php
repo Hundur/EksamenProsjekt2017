@@ -52,52 +52,24 @@ include_once('header.php');
 				  
 		  <div class="Slide fade">
           <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
+          <div class="textbox"><h3>Espresso House</h3>
 			  <p></p></div>
              </div>
 				  
-				  <div class="Slide fade">
+            <div class="Slide fade">
           <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
+          <div class="textbox"><h3>Lucky Bird</h3>
 			  <p></p></div>
              </div>
-				  
-				  <div class="Slide fade">
+                  
+            <div class="Slide fade">
           <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
+          <div class="textbox"><h3>Kaffe og Juice</h3>
 			  <p></p></div>
              </div>
-				  
-				  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
-			  <p></p></div>
-             </div>
-				  
-				  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
-			  <p></p></div>
-             </div>
-				  
-				  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
-			  <p></p></div>
-             </div>
-				  
-				  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
-			  <p></p></div>
-             </div>
-				  
-				  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>?</h3>
-			  <p></p></div>
-             </div>
-				  
+                  
+           
+				
 
           <a class="back" onclick="plusSlides(-1)">&#10094;</a>
           <a class="forward" onclick="plusSlides(1)">&#10095;</a>

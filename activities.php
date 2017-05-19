@@ -31,30 +31,32 @@ include_once('header.php');
     
 		  <div class="slide-container">
           <div class="Slide fade">
-          <img src="img/Restaurants/dognvill.jpg" style="width:100%">
-		  <div class="textbox"><h3></h3></div>
+          <img src="img/" style="width:100%">
+		  <div class="textbox"><h3>Grunerløkka Basketbane</h3>
+              <p></p></div>
               </div>
 
           <div class="Slide fade">
-          <img src="img/Shops/Vitusapotek.jpg" style="width:100%">
-	      <div class="textbox"><h3></h3></div>
+          <img src="img/" style="width:100%">
+	      <div class="textbox"><h3>Vulkan Klatresenter</h3>
+              <p></p></div>
              </div>
 
           <div class="Slide fade">
           <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3></h3>
+          <div class="textbox"><h3>Athletica Vulkan</h3>
 			  <p></p></div>
              </div>
 			  
 		  <div class="Slide fade">
           <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3></h3>
+          <div class="textbox"><h3>Parkteateret Scene</h3>
 			  <p></p></div>
              </div>
 			  
 		  <div class="Slide fade">
           <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3></h3>
+          <div class="textbox"><h3>Hendrix Ibsen Aetat</h3>
 			  <p></p></div>
              </div>
 
