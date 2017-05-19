@@ -28,52 +28,147 @@ include_once('header.php');
 			
 			<a href="arrangements.php" class = menucircle2 id = arrangement2> <p class = "menutext2" id = "menutext25"><img src="img/icons/arrangement-27.png" alt="icons"></p></a> 
 			
-		<!-- End of main navbar -->
 		
-			<div id="container">
-                
-            <div class="Slides">
-                 <div class="textbox">
-                    <h3><b></b></h3>
-				    <p></p>
-					 <p><a href="http://www.dognvillburger.no/">www.dognvillburger.no</a></p>
-                </div>
-                <img src="img/Restaurants/dognvill.jpg" style="width:100%">
-            </div>
-                
-            <div class="Slides">
-                 <div class="textbox">
-                    <h3><b>Kantina Vulkan</b></h3>
-				    <p></p>
-                </div>
-                <img src="img/Restaurants/kantina.jpg" style="width:100%">
-            </div>
-	   <button class="w3-button w3-transparent w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-transparent w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-		</div>
+		    <!-- End of main navbar -->
+		
+		
+		
+			  <div class="slide-container">
+          <div class="Slide fade">
+          <img src="img/Restaurants/dognvill.jpg" style="width:100%">
+	      <div class="textbox"><h3>Døgnvill bar</h3>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					 <p><a href="http://www.dognvillburger.no/">www.dognvillburger.no</a></p></div>
+              </div>
+
+          <div class="Slide fade">
+          <img src="img/Restaurants/kantina.jpg" style="width:100%">
+	      <div class="textbox"><h3>Kantina Vulkan</h3>
+			  <p></p></div>
+             </div>
+
+          <div class="Slide fade">
+          <img src="img/Restaurants/mathallen.jpg" style="width:100%">
+			  <div class="textbox"><h3>Mathallen</h3>
+				  <p></p></div>
+             </div>
+				  
+		  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+				  <div class="Slide fade">
+          <img src="img/Restaurants/" style="width:100%">
+          <div class="textbox"><h3>?</h3>
+			  <p></p></div>
+             </div>
+				  
+
+          <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+                   
+		      <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+                    
+		             </div>  <!-- End of slider -->
+		
+		   
+		
+		 <script>
+   
+		var slideIndex = 1;
+     
+	    showSlides(slideIndex);
+
     
-                <!-- End of container -->
+				function plusSlides(n) {
+    
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+  
+					showSlides(slideIndex = n);
+   
+				}
+
+				function showSlides(n) {
+    
+					var i;
+    
+					var slides = document.getElementsByClassName("Slide");
+    
+					var dots = document.getElementsByClassName("dot");
+   
+					if (n > slides.length) {slideIndex = 1} 
+    
+					if (n < 1) {slideIndex = slides.length}
+    
+					for (i = 0; i < slides.length; i++) {
+     
+						slides[i].style.display = "none"; 
+    
+					}
+   
+		for (i = 0; i < dots.length; i++) {
+     
+			dots[i].className = dots[i].className.replace(" active", "");
+  
+		}
+ 
+		slides[slideIndex-1].style.display = "block"; 
+  
+		dots[slideIndex-1].className += " active";
 		
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-        showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("Slides");
-        if (n > x.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-        }
+			}
+       
     </script>
 		
-    </body>
-        
-</html>
+		
+	     </body>
+       </html>
+                
+            
