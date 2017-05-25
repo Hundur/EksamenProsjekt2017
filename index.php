@@ -27,11 +27,11 @@ include_once('header.php');
 		
 			<a href="activities.php" class = menucircle id = activities> <p class = "menutext" id = "menutext4"><img src="img/icons/activities.png" alt="icons"><br>Activities</p></a>
 		
-			<a href="arrangements.php" class = menucircle id = arrangement> <p class = "menutext" id = "menutext5"><img src="img/icons/arrangement.png" alt="icons"><br>Arrangements</p></a>  <!-- End of main navbar -->
-  
-		    
+			<a href="contact.php" class = menucircle id = contact> <p class = "menutext" id = "menutext5"><img src="img/icons/contact.png" alt="icons"><br>Contact Us</p></a>  <!-- End of main navbar -->
+				 
 		    <!-- End of container -->
 		
+		<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 		
 		<script>
         /* Jquery Code */ 
