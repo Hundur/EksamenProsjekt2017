@@ -14,8 +14,13 @@
 			
 
 		<?php 
-
+require 'Connect.php';
 include_once('header.php');
+$aktivitetsSlides = [];
+$query = mysqli_query($con,'SELECT * FROM lokasjoner WHERE KategoriID = 4');
+while($rows = mysqli_fetch_assoc($query)){
+$aktivitetsSlides[] = $rows;
+};  
 ?> 
 			
 			<a href="food.php" class = menucircle2 id = food2> <p class = "menutext2" id = "menutext21"><img src="img/icons/food-27.png" alt="icons"></p></a>
@@ -29,50 +34,33 @@ include_once('header.php');
 		<!-- End of main navbar -->
 		
     
-		  <div class="slide-container">
-          <div class="Slide fade">
-          <img src="img/" style="width:100%">
-		  <div class="textbox"><h3>Grunerløkka Basketbane</h3>
-              <p></p></div>
-              </div>
+        <div class="slide-container">
+            
+            <?php foreach ($aktivitetsSlides as $aktivitetsSlide) { ?>
+            
+            <div class="Slide fade">
+                
+                <img src="<?= $aktivitetsSlide['Bilde'] ?>" style="width:100%">
+	            <div class="textbox">
+                     <h3><?= $aktivitetsSlide['Navn'] ?></h3>
+			         <p><?= $aktivitetsSlide['Beskrivelse'] ?></p>
+                     <p>Avstand: <?= $aktivitetsSlide['Avstand'] ?></p>
+                     <p>Åpningstid: <?= $aktivitetsSlide['Open'] ?></p>
+                     <p>Stengetid: <?= $aktivitetsSlide['Stengetid'] ?></p>
+ 				     <p><a href="<?= $aktivitetsSlide['Lenke'] ?>">Lenke til nettsiden</a></p>
+                </div>
+            
+            </div>              
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
 
-          <div class="Slide fade">
-          <img src="img/" style="width:100%">
-	      <div class="textbox"><h3>Vulkan Klatresenter</h3>
-              <p></p></div>
-             </div>
+            <?php } ?>
+            
+        </div>
+        
 
-          <div class="Slide fade">
-          <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3>Athletica Vulkan</h3>
-			  <p></p></div>
-             </div>
-			  
-		  <div class="Slide fade">
-          <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3>Parkteateret Scene</h3>
-			  <p></p></div>
-             </div>
-			  
-		  <div class="Slide fade">
-          <img src="img3.jpg" style="width:100%">
-          <div class="textbox"><h3>Hendrix Ibsen Aetat</h3>
-			  <p></p></div>
-             </div>
 
-			  
-          <a class="back" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-             </div>
-                   
-		      <br>
-
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-                    
-		             </div>  <!-- End of slider -->
+          <!-- End of slider -->
 		
 		   
 		

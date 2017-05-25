@@ -14,8 +14,13 @@
 
 		
 		<?php 
-
+require 'Connect.php';
 include_once('header.php');
+$shopSlides = [];
+$query = mysqli_query($con,'SELECT * FROM lokasjoner WHERE KategoriID = 3');
+while($rows = mysqli_fetch_assoc($query)){
+    $shopSlides[] = $rows;
+};
 ?> 
 			
 			<a href="food.php" class = menucircle2 id = food2> <p class = "menutext2" id = "menutext21"><img src="img/icons/food-27.png" alt="icons"></p></a>
@@ -28,49 +33,34 @@ include_once('header.php');
 			
 		<!-- End of main menu -->
 		
-		
-          <div class="slide-container">
-          <div class="Slide fade">
-          <img src="img/Shops/Vitusapotek.jpg" style="width:100%">
-	      <div class="textbox"><h3>Vitus Apotek</h3></div>
-             </div>
-			  
-		  <div class="Slide fade">
-          <img src="img/Shops/Kiwi.jpg" style="width:100%">
-		  <div class="textbox"><h3>Kiwi minipris</h3></div>
-              </div>
+			
+        <div class="slide-container">
+            
+            <?php foreach ($shopSlides as $shopSlide) { ?>
+            
+            <div class="Slide fade">
+                
+                <img src="<?= $shopSlide['Bilde'] ?>" style="width:100%">
+	            <div class="textbox">
+                     <h3><?= $shopSlide['Navn'] ?></h3>
+			         <p><?= $shopSlide['Beskrivelse'] ?></p>
+                     <p>Avstand: <?= $shopSlide['Avstand'] ?></p>
+                     <p>Åpningstid: <?= $shopSlide['Open'] ?></p>
+                     <p>Stengetid: <?= $shopSlide['Stengetid'] ?></p>
+				     <p><a href="<?= $shopSlide['Lenke'] ?>">Lenke til nettsiden</a></p>
+                </div>
+            
+            </div>              
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
 
-          <div class="Slide fade">
-          <img src="img/Shops/Rema1000.jpg" style="width:100%">
-          <div class="textbox"><h3>Rema 1000</h3>
-			  <p></p></div>
-             </div>
-			  
-		  <div class="Slide fade">
-          <img src="img/Shops/iofrisor.jpg" style="width:100%">
-          <div class="textbox"><h3>I O Frisør</h3>
-			  <p></p></div>
-             </div>
-			  
-		  <div class="Slide fade">
-          <img src="img/Shops/Vinmonopolet.jpg" style="width:100%">
-          <div class="textbox"><h3>Vinmonopolet</h3>
-			  <p></p></div>
-             </div>
-			  
-		  
-          <a class="back" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-             </div>
-                   
-		      <br>
+            <?php } ?>
+            
+        </div>
+        
 
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-                    
-		             </div>  <!-- End of slider -->
+
+          <!-- End of slider -->
 		
 		   
 		

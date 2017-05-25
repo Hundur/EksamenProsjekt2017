@@ -14,8 +14,14 @@
 
 		
 		<?php 
-
+require 'Connect.php';
 include_once('header.php');
+$matslides = [];
+$query = mysqli_query($con,'SELECT * FROM lokasjoner WHERE KategoriID = 1');
+while($rows = mysqli_fetch_assoc($query)){
+    $matslides[] = $rows;
+};
+        
 ?> 
 			
 			<a href="food.php" class = menucircle2 id = food2> <p class = "menutext2" id = "menutext21"><img src="img/icons/food-27.png" alt="icons"></p></a>
@@ -28,61 +34,33 @@ include_once('header.php');
 			
 		    <!-- End of main navbar -->
 		
-		
-		
-			  <div class="slide-container">
-          <div class="Slide fade">
-          <img src="img/Restaurants/dognvill.jpg" style="width:100%">
-	      <div class="textbox"><h3>Døgnvill bar</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					 <p><a href="http://www.dognvillburger.no/">www.dognvillburger.no</a></p></div>
-              </div>
-
-          <div class="Slide fade">
-          <img src="img/Restaurants/kantina.jpg" style="width:100%">
-	      <div class="textbox"><h3>Kantina Vulkan</h3>
-			  <p></p></div>
-             </div>
-
-          <div class="Slide fade">
-          <img src="img/Restaurants/mathallen.jpg" style="width:100%">
-			  <div class="textbox"><h3>Mathallen</h3>
-				  <p></p></div>
-             </div>
-				  
-		  <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>Espresso House</h3>
-			  <p></p></div>
-             </div>
-				  
+        <div class="slide-container">
+            
+            <?php foreach ($matslides as $matslide) { ?>
+            
             <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>Lucky Bird</h3>
-			  <p></p></div>
-             </div>
-                  
-            <div class="Slide fade">
-          <img src="img/Restaurants/" style="width:100%">
-          <div class="textbox"><h3>Kaffe og Juice</h3>
-			  <p></p></div>
-             </div>
-                  
-           
-				
+                
+                <img src="<?= $matslide['Bilde'] ?>" style="width:100%">
+	            <div class="textbox">
+                     <h3><?= $matslide['Navn'] ?></h3>
+			         <p><?= $matslide['Beskrivelse'] ?></p>
+                     <p>Avstand: <?= $matslide['Avstand'] ?></p>
+                     <p>Åpningstid: <?= $matslide['Open'] ?></p>
+                     <p>Stengetid: <?= $matslide['Stengetid'] ?></p>
+ 				     <p><a href="<?= $matslide['Lenke'] ?>">Lenke til nettsiden</a></p>
+                </div>
+            
+            </div>              
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
 
-          <a class="back" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-             </div>
-                   
-		      <br>
+            <?php } ?>
+            
+        </div>
+        
 
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-                    
-		             </div>  <!-- End of slider -->
+
+          <!-- End of slider -->
 		
 		   
 		

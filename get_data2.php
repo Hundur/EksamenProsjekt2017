@@ -8,7 +8,6 @@
            <?php
         
         require 'Connect.php' ;
-        mysqli_set_charset($con,"UTF8");
         $query = mysqli_query($con, "SELECT * FROM lokasjoner ORDER BY ID ASC" );
         if(!$query){
             echo ('Error in Query');
