@@ -1,14 +1,20 @@
 <?php
-
 $user = 'root';
 $pass = '';
 $db = 'eksamensdatabase';
-$con = mysql_connect('localhost', $user, $pass);
-$db = mysql_select_db('eksamensdatabase');
+$con = mysqli_connect('localhost',$user,$pass);
+if($con == false){
+    echo ('Error in connection');
 
-if($con){
-    echo 'Sucessfully Connected to the database';
-} else {
-    die('Error');
 }
-?>
+$dbcon = mysqli_select_db($con, $db);
+
+
+
+
+/*if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+} 
+echo "Connected successfully";
+*/
+?> 
