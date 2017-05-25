@@ -23,7 +23,7 @@ p {
 /* Slideshow container */
 
 .slide-container {
-   position: fixed;
+    position: fixed;
     width: 64%;
     top: 19%;
     left: 18%;
@@ -172,41 +172,39 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 1.7pt;
-    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1.0pt;
+    font-family: 'Raleway', sans-serif; 
     float: left;
     width: 100%;
-    padding-top: 25%;
+    padding-top: 26%;
     font-size: 0.7em;
-    line-height: 2.3em;
+    line-height: 2.9em;
     margin-top: -0.5em;
 }
 
 #menutext1 {
     padding-top: 28%;
-    line-height: 1.5em;
+    line-height: 2.0em;
 }
 
 
-/* Circles */ 
+/* Circles for index.php */ 
 
 .menucircle {
     position: fixed;
     text-align: center;
     height: 145px;
     width: 145px;
-    border: 1px dashed white;
     border-radius: 200px;
-    -webkit-transition: all 200ms linear;
-    -moz-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    -ms-transition: all 200ms linear;
-    transition: all 200ms linear;
     opacity: 0.9;
+    -webkit-transition: width 0s, height 0s, 
+    -webkit-transform 0s; 
+    transition: width 0s, height 0s, transform 0s;
 }
 
 .menucircle:hover {
-    border: 2px dashed #f1f1f1;
+    width: 155px;
+    height: 155px;
 }
 
 #food {
@@ -234,7 +232,7 @@ html {
     background-color: #ffd460;
 }
 
-#arrangement {
+#contact {
     right: 22%;
     top: 41%;
     background-color: #8ac394;
@@ -267,9 +265,9 @@ html {
 .menucircle2 { 
  position: fixed;
     text-align: center;
-    height: 59spx;
+    height: 59px;
     width: 59px;
-    border: 10px dashed #transparent;
+    border: 10px solid #transparent;
     border-radius: 200px;
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
@@ -279,39 +277,45 @@ html {
 }
 
 .menucircle2:hover {
-    height: 70px;
     width: 70px;
-    left: 6%;
 }
 
 #food2 {
-    top: 24%;
-    left: 0%;
+    top: 30%;
+    left: 8%;
     text-algin: center;
     background-color: #7d5179;
 }
 
+#food2::before{
+  content: '';
+  position: absolute;
+  border-left: 2px;
+  background: dodgerblue;
+  z-index: 1;
+}
+
 #transport2 {
-    top: 35.5%;
-    left: 0%;
+    top: 43.5%;
+    left: 8%;
     background-color: #6aafc8;
 }
 
 #shopping2 {
-    top: 47.3%;
-    left: 0%;
+    top: 57.3%;
+    left: 8%;
     background-color: #ff5252;
 }
 
 #activities2 {
-    top: 59.2%;
-    left: 0%;
-    background-color: #ffd460;
+    top: 70.6%;
+    left: 8%;
+    background-color: #8ac394;
 }
 
-#arrangement2 {
-    top: 71%;
-    left: 0%;
+#contact2 {
+    top: 81%;
+    left: 5%;
     background-color: #8ac394;
 }
 
