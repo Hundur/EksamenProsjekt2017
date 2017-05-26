@@ -2,136 +2,20 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
-/* Background-image for all pages */
 
-html {
-    background-image: url('img/Vulkan1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
+/* Font-family */
 
-/* Frontpage heading */ 
+html, 
+#heading,
+#title,
+h2, 
+h3,
+h4,
+p {
+  font-family: 'Raleway', sans-serif;
+} 
 
-#heading {
-    position: absolute;
-    color: #f1f1f1;
-    top: 25%;
-    left: 50%;
-    font-size: 2.1em;
-    font-weight: 200;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4pt;
-}
-
-
-/* Circle-navbar for frontpage */
-
-
-/* For icons inside circles */
-
-#icons {
-    position: absolute;
-}
-
-
-/* For text inside circles */
-
-.menutext {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1.0pt;
-    font-family: 'Raleway', sans-serif; 
-    float: left;
-    width: 100%;
-    padding-top: 26%;
-    font-size: 0.8em;
-    line-height: 2.9em;
-    margin-top: -0.5em;
-}
-
-#menutext1 {
-    padding-top: 28%;
-    line-height: 2.0em;
-}
-
-
-/* Circles for index.php */ 
-
-.menucircle {
-    position: fixed;
-    text-align: center;
-    height: 145px;
-    width: 145px;
-    border-radius: 200px;
-    opacity: 0.9;
-    -webkit-transition: width 0s, height 0s, 
-    -webkit-transform 0s; 
-    transition: width 0s, height 0s, transform 0s;
-}
-
-.menucircle:hover {
-    width: 155px;
-    height: 155px;
-}
-
-#food {
-    left: 22%;
-    top: 41%;
-    text-algin: center;
-    background-color: #7d5179;
-}
-
-
-#transport {
-    left: 33%;
-    top: 59.6%;
-    background-color: #6aafc8; 
-}
-
-#shopping {
-    margin-left: 44.2%;
-    top: 41%;
-    background-color: #ff5252;
-}
-
-#activities {
-    right: 33%;
-    top: 59.6%;
-    background-color: #ffd460;
-}
-
-#contact {
-    right: 22%;
-    top: 41%;
-    background-color: #8ac394;
-}
-
-#icons {
-    position: absolute;
-}
-
-/* End circle-navbar frontpage */ 
-
-
-/* Circle-navbar frontpage Responsive */ 
-
-@media screen and (max-width: 480px) {
-#heading {
-    left: 5%;
-
-}    
-.menucircle {
-        height: 60px;
-        width: 60px;
-        border: 2px solid transparent;
-    }
-}
-
-/* Slideshow */ 
+/* Slider */ 
 
 * {box-sizing:border-box}
 
@@ -144,8 +28,8 @@ html {
     top: 19%;
     left: 18%;
     height: 470px;
-    background: #fff;
-    border: 1px dashed #fff;
+    background: #f1f1f1;
+    border: 1px dashed #f1f1f1;
     outline: 1px solid white;
     outline-offset: 6px;
     opacity: 1;
@@ -159,9 +43,6 @@ img {
 .Slide {
     display: none;
 }
-
-/* Container for about, contact */
-
 
 /* Forward and back buttons */
 
@@ -190,7 +71,14 @@ img {
   background-color: rgba(0,0,0,0.5);
 }
 
-/* Textbox for slider */
+/* Textbox */
+
+#mainContainer
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 
 .textbox
 {
@@ -205,6 +93,21 @@ img {
     overflow: hidden;
 }
 
+
+.dots {
+  cursor:pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 /* Fading animation */
 
@@ -227,51 +130,145 @@ img {
 
 /* Slider End */ 
 
-
-/* Underpages headings, text */
-
-----
-
-  p {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    
-    
-  }
-
-  p, p a {
+p a {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 0.99em;
-  font-weight: 400;
+  letter-spacing: -0.1pt;
+}
+
+h2, p { 
+  font-weight: 300;
   text-align: center;
-  line-height: 24px;
-  color: #333;
-
-}
-
-/* Font-family */
-
-html, 
-#heading,
-#title,
-h1,
-h2,
-h3,
-h4,
-h5 {
-   font-family: 'Raleway', sans-serif;
 }
 
 
-h2, h3 {
-   text-align: center;
-   padding-bottom: 0pt;
+html {
+    background-image: url('img/Vulkan1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
-color {
-color: #8ccde5; 
+#heading {
+    position: relative;
+    color: #f1f1f1;
+    font-size: 2.1em;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4pt;
+    top: 20%;
 }
+
+
+/* Circle-navbar for frontpage */
+
+
+/* For images inside circles */
+
+
+#icons {
+    position: absolute;
+}
+
+
+/* For text inside circles */
+
+.menutext {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.0pt;
+    font-family: 'Raleway', sans-serif; 
+    float: left;
+    width: 100%;
+    padding-top: 26%;
+    font-size: 0.7em;
+    line-height: 2.9em;
+    margin-top: -0.5em;
+}
+
+#menutext1 {
+    padding-top: 28%;
+    line-height: 2.0em;
+}
+
+
+/* Circles for index.php */ 
+
+.menucircle {
+    position: absolute;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    border-radius: 200px;
+    opacity: 0.9;
+    -webkit-transition: width 0s, height 0s, 
+    -webkit-transform 0s; 
+    transition: width 0s, height 0s, transform 0s;
+}
+
+.menucircle:hover {
+    width: 155px;
+    height: 155px;
+}
+
+#food {
+    left: 30%;
+    margin-left: -30px;
+    top: 41%;
+    background-color: #7d5179;
+}
+
+#transport {
+    left: 40%;
+    margin-left: -30px;
+    top: 59.6%;
+    background-color: #6aafc8;
+}
+
+#shopping {
+    left: 50%;
+    margin-left: -30px;
+    top: 41%;
+    background-color: #ff5252;
+}
+
+#activities {
+    left: 60%;
+    margin-left: -30px;
+    top: 59.6%;
+    background-color: #ffd460;
+}
+
+#contact {
+    left: 70%;
+    margin-left: -30px;
+    top: 41%;
+    background-color: #8ac394;
+}
+
+#icons {
+    position: absolute;
+}
+
+/* End circle-navbar frontpage */ 
+
+
+/* Circle-navbar frontpage Responsive */ 
+
+@media screen and (max-width: 480px) {
+#heading {
+    left: 5%;
+
+}    
+.menucircle {
+        height: 60px;
+        width: 60px;
+        border: 2px solid transparent;
+    }
+}
+
 
 /* Circle-navbar for underpages */ 
 
@@ -298,14 +295,6 @@ color: #8ccde5;
     left: 8%;
     text-algin: center;
     background-color: #7d5179;
-}
-
-#food2::before{
-  content: '';
-  position: absolute;
-  border-left: 2px;
-  background: dodgerblue;
-  z-index: 1;
 }
 
 #transport2 {
@@ -350,6 +339,107 @@ color: #8ccde5;
 
 /* End circle-navbar for underpages */
 
+/* Map */
+
+#Kart {
+     position: absolute;
+     width: 100%;
+     opacity: 1;
+ }
+ 
+ #OlafRyes {
+     width: 30px;
+     opacity: 1;
+     position: relative;
+     left: 510px;
+     top: -30px;
+ }
+ 
+ #OlafRyes:hover ~ #OR{
+     opacity: 1;
+ }
+ 
+ #OR {
+     outline: #d1c69a dotted;
+     position: relative;
+     background: #f7ebb7;
+     width: 130px;
+     height: 50px;
+     top: -70px;
+     left: 540px;
+     opacity: 1;
+ }
+ 
+ #Mollerveien {
+     width: 30px;
+     opacity: 1;
+     position: relative;
+     top: 350px;
+     left: 210px;
+ }
+ 
+ #Mollerveien:hover ~ #MV{
+     opacity: 1;
+ }
+ 
+ #MV {
+     outline: #d1c69a dotted;
+     position: relative;
+     background: #f7ebb7;
+     width: 110px;
+     height: 50px;
+     top: 310px;
+     left: 240px;
+     opacity: 1;
+ }
+ 
+ #Schousplass {
+     width: 30px;
+     opacity: 1;
+     position: relative;
+     top: 100px;
+     left: 515px;
+ }
+ 
+ #Schousplass:hover ~ #SP{
+     opacity: 1;
+ }
+ 
+ #SP {
+     outline: #d1c69a dotted;
+     position: relative;
+     background: #f7ebb7;
+     width: 110px;
+     height: 50px;
+     top: 60px;
+     left: 550px;
+     opacity: 1;
+ }
+  
+ #telthusbakken {
+     width: 30px;
+     opacity: 1;
+     position: relative;
+     top: -35px;
+     left: 175px;
+ }
+ 
+ #telthusbakken:hover ~ TB{
+     opacity: 1;
+ }
+ 
+ #TB{
+     outline: #d1c69a dotted;
+     position: relative;
+     background: #f7ebb7;
+     width: 110px;
+     height: 50px;
+     top: -80px;
+     left: 210px;
+     opacity: 1;
+ }
+
+/* End of map */
 
 /* Html, body */
 
@@ -490,15 +580,22 @@ color: #8ccde5;
     }
  }
 
-.about
-{
-    background: rgba(255,255,255,0.7);
-    position: absolute;
-    bottom: 10%;
-    left: 9%;
-    right: 9%;
-    height: 80%;
-    width: 80%;
-    padding: 40px;
-    overflow: hidden;
-}
+
+<script>
+/* Javascript goes here */ 
+
+$(document).ready(function() {
+    $(".toggle").click(function() {
+       $('.links').slideToggle();
+    });
+    $(window).resize(function() {
+       if ($(window).width() > 768) {
+          $('.links').show();
+       } else {
+          $('.links').hide();
+       }
+    });
+});
+	
+/* Javascript End */ 
+	</script>
