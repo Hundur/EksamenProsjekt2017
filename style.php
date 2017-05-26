@@ -203,8 +203,9 @@ html {
 }
 
 .menucircle:hover {
-    width: 155px;
-    height: 155px;
+    width: 175px;
+    height: 175px;
+    box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #food {
@@ -465,7 +466,7 @@ html {
        display: none;
     }
     .nav .container .links ul li {
-       display: block;
+       display: block;21
        text-align: center;
        padding: 10px;
     }
@@ -477,6 +478,103 @@ html {
     }
  }
 
+#Kart {
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+#OlafRyes {
+    width: 30px;
+    opacity: 1;
+    position: relative;
+    left: 510px;
+    top: -30px;
+}
+
+#OlafRyes:hover ~ #OR{
+    opacity: 1;
+}
+
+#OR {
+    outline: #d1c69a dotted;
+    position: relative;
+    background: #f7ebb7;
+    width: 130px;
+    height: 50px;
+    top: -70px;
+    left: 540px;
+    opacity: 1;
+}
+
+#Mollerveien {
+    width: 30px;
+    opacity: 1;
+    position: relative;
+    top: 350px;
+    left: 210px;
+}
+
+#Mollerveien:hover ~ #MV{
+    opacity: 1;
+}
+
+#MV {
+    outline: #d1c69a dotted;
+    position: relative;
+    background: #f7ebb7;
+    width: 110px;
+    height: 50px;
+    top: 310px;
+    left: 240px;
+    opacity: 1;
+}
+
+#Schousplass {
+    width: 30px;
+    opacity: 1;
+    position: relative;
+    top: 100px;
+    left: 515px;
+}
+
+#Schousplass:hover ~ #SP{
+    opacity: 1;
+}
+
+#SP {
+    outline: #d1c69a dotted;
+    position: relative;
+    background: #f7ebb7;
+    width: 110px;
+    height: 50px;
+    top: 60px;
+    left: 550px;
+    opacity: 1;
+}
+ 
+#telthusbakken {
+    width: 30px;
+    opacity: 1;
+    position: relative;
+    top: -35px;
+    left: 175px;
+}
+
+#telthusbakken:hover ~ TB{
+    opacity: 1;
+}
+
+#TB{
+    outline: #d1c69a dotted;
+    position: relative;
+    background: #f7ebb7;
+    width: 110px;
+    height: 50px;
+    top: -80px;
+    left: 210px;
+    opacity: 1;
+}
 
 <script>
 /* Javascript goes here */ 
