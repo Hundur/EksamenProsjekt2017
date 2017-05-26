@@ -215,36 +215,36 @@ html {
 
 #food {
     left: 30%;
-    margin-left: -30px;
-    top: 41%;
+    margin-left: -60px;
+    top: 36%;
     background-color: #7d5179;
 }
 
 #transport {
     left: 40%;
-    margin-left: -30px;
-    top: 59.6%;
+    margin-left: -60px;
+    top: 54.6%;
     background-color: #6aafc8;
 }
 
 #shopping {
     left: 50%;
-    margin-left: -30px;
-    top: 41%;
+    margin-left: -60px;
+    top: 36%;
     background-color: #ff5252;
 }
 
 #activities {
     left: 60%;
-    margin-left: -30px;
-    top: 59.6%;
+    margin-left: -60px;
+    top: 54.6%;
     background-color: #ffd460;
 }
 
 #contact {
     left: 70%;
-    margin-left: -30px;
-    top: 41%;
+    margin-left: -60px;
+    top: 36%;
     background-color: #8ac394;
 }
 
