@@ -38,21 +38,6 @@ include_once('header.php');
 		
 		<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 		
-		<script>
-        /* Jquery Code */ 
-$(document).ready(function() {
-    $(".toggle").click(function() {
-       $('.links').slideToggle();
-    });
-    $(window).resize(function() {
-       if ($(window).width() > 768) {
-          $('.links').show();
-       } else {
-          $('.links').hide()
-       } 
-    });
-});
-      </script>
 	
 	
 	</body>
