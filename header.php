@@ -19,10 +19,10 @@
                <a href="index.php">Forside</a>
             </li>
             <li>
-               <a href="#">Om oss</a>
+               <a href="about.php">Om oss</a>
             </li>
             <li>
-               <a href="#">Kontakt oss</a>
+               <a href="contact.php">Kontakt oss</a>
             </li>
          </ul>
       </div>
