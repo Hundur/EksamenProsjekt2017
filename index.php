@@ -20,7 +20,7 @@ include_once('header.php');
 		
         <div id="mainContainer">
         
-                <div id="heading"><a href="index.php">Westerdals<b>Vulkan</b></a></div>
+                <div id="heading"><a>Westerdals<b>Vulkan</b></a></div>
 
                 <a href="food.php" class = menucircle id = food> <p class = "menutext" id = "menutext1"><img src="img/icons/food.png" alt="icons"><br>Food & drinks</p></a>
 
