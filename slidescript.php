@@ -17,11 +17,11 @@
 
     function showSlides(n)
     {
-        var i; // declaration
+        var i; // declaration for slide-length
     
-        var slides = document.getElementsByClassName("Slide"); // 
+        var slides = document.getElementsByClassName("Slide"); // getting a Slidepage 
    
-        if (n > slides.length) {slideIndex = 1} 
+        if (n > slides.length) {slideIndex = 1}  // for the length of slides
     
         if (n < 1) {slideIndex = slides.length}
     
