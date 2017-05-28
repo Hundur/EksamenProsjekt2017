@@ -23,7 +23,7 @@ require 'sideknapper.php';
 		<!-- End of main navbar -->
 		
 			<div class="slide-container">
-				<div class="about"><h2>Om Westerdals<color>vulkan</color></h2><p>*</p><p>For deg som er ny, og ønsker å orientere seg om det som er å finne på ved vår Campus på Vulkan!</p></div>
+				<div class="about"><h2>Westerdals Vulkan Guide</h2><p>-</p><p>På denne siden får du oversikt over hva som befinner seg i området av Campus Vulkan. Er du ukjent i området, er dette en flott veiviser til alt av aktiviteter, mattilbud, butikker og transportmuligheter i nærheten! </p></div>
 		</div>
 		
 	     </body>
