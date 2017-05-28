@@ -1,11 +1,12 @@
 <script>
    
-    var slideIndex = 1;  // Declaration of slide
+  
+    var slideIndex = 1; // Declaration of Slide
      
-    showSlides(slideIndex); // Showing the slide
-
+	showSlides(slideIndex); // Getting slide
     
-    function plusSlides(n)  
+	
+    function plusSlides(n)  // Function for next, previous slide
     {
         showSlides(slideIndex += n);
     }
@@ -15,15 +16,15 @@
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n)
+    function showSlides(n) // For the slide-length
     {
-        var i; // declaration for slide-length
+        var i; // declaration for length of slides
     
-        var slides = document.getElementsByClassName("Slide"); // getting a Slidepage 
+        var slides = document.getElementsByClassName("Slide"); 
    
-        if (n > slides.length) {slideIndex = 1}  // for the length of slides
+        if (n > slides.length) {slideIndex = 1} 
     
-        if (n < 1) {slideIndex = slides.length}  // for the length of slides
+        if (n < 1) {slideIndex = slides.length} 
     
         for (i = 0; i < slides.length; i++) // for the length of slides
         {
@@ -31,8 +32,7 @@
         }
  
 		slides[slideIndex-1].style.display = "block"; 
-  
-		dots[slideIndex-1].className += " active";
+
     }
        
 </script>
