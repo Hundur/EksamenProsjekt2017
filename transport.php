@@ -24,17 +24,7 @@ require 'sideknapper.php';
 		<!-- End of main navbar -->
 		
 			<div class="slide-container">
-                
-                <img src="Vulkanomraade.PNG" id="Kart">
-                <img src="img/icons/pinpoint.png" id="Mollerveien">
-                <div id="MV"><p>Møllerveien<br> Buss: 34, 54.</p></div>
-                <img src="img/icons/pinpoint.png" id="telthusbakken">
-                <div id="TB"><p>Telthusbakken<br> Buss: 34, 54.</p></div>
-                <img src="img/icons/pinpoint.png" id="OlafRyes">
-                <div id="OR"><p>Olaf Ryes Plass<br> Trikk: 11, 12, 13.</p></div>
-                <img src="img/icons/pinpoint.png" id="Schousplass">
-                <div id="SP"><p>Schous Plass<br> Trikk: 11, 12, 13.</p></div>
-            
+                 <img src="img/Transport/Kart.jpg">
 		</div>  <!-- End of container -->
 		
     </body>
