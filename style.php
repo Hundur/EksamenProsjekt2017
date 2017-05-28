@@ -348,6 +348,21 @@ h2, p {
 
 /* End circle-navbar for underpages */
 
+/* For about page */
+
+.about
+{
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+    right: 9%;
+    height: 80%;
+    width: 80%;
+    padding: 40px;
+    overflow: hidden;
+}
+
 /* Map */
 
 #Kart {
@@ -355,104 +370,10 @@ h2, p {
      width: 100%;
      opacity: 1;
  }
- 
- #OlafRyes {
-     width: 30px;
-     opacity: 1;
-     position: relative;
-     left: 510px;
-     top: -30px;
- }
- 
- #OlafRyes:hover ~ #OR{
-     opacity: 1;
- }
- 
- #OR {
-     outline: #d1c69a dotted;
-     position: relative;
-     background: #f7ebb7;
-     width: 130px;
-     height: 50px;
-     top: -70px;
-     left: 540px;
-     opacity: 1;
- }
- 
- #Mollerveien {
-     width: 30px;
-     opacity: 1;
-     position: relative;
-     top: 350px;
-     left: 210px;
-     align: 
- }
- 
- #Mollerveien:hover ~ #MV{
-     opacity: 1;
- }
- 
- #MV {
-     outline: #d1c69a dotted;
-     position: relative;
-     background: #f7ebb7;
-     width: 110px;
-     height: 50px;
-     top: 310px;
-     left: 240px;
-     opacity: 1;
- }
- 
- #Schousplass {
-     width: 30px;
-     opacity: 1;
-     position: relative;
-     top: 100px;
-     left: 515px;
- }
- 
- #Schousplass:hover ~ #SP{
-     opacity: 1;
- }
- 
- #SP {
-     outline: #d1c69a dotted;
-     position: relative;
-     background: #f7ebb7;
-     width: 110px;
-     height: 50px;
-     top: 60px;
-     left: 550px;
-     opacity: 1;
- }
-  
- #telthusbakken {
-     width: 30px;
-     opacity: 1;
-     position: relative;
-     top: -35px;
-     left: 175px;
- }
- 
- #telthusbakken:hover ~ TB{
-     opacity: 1;
- }
- 
- #TB{
-     outline: #d1c69a dotted;
-     position: relative;
-     background: #f7ebb7;
-     width: 110px;
-     height: 50px;
-     top: -80px;
-     left: 210px;
-     opacity: 1;
- }
 
 /* End of map */
 
 /* Html, body */
-
 
 
 /* Navigation-bar */ 
@@ -589,15 +510,3 @@ h2, p {
        padding-top: 10px;
     }
  }
-.about
-{
-    background: rgba(255,255,255,0.7);
-    position: absolute;
-    bottom: 10%;
-    left: 9%;
-    right: 9%;
-    height: 80%;
-    width: 80%;
-    padding: 40px;
-    overflow: hidden;
-}
