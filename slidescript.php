@@ -1,6 +1,7 @@
+/* Making a slider for underpages */ 
+
 <script>
    
-  
     var slideIndex = 1; // Declaration of Slide
      
 	showSlides(slideIndex); // Getting slide
