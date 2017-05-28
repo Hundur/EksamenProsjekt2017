@@ -1,8 +1,8 @@
 <script>
    
-    var slideIndex = 1;
+    var slideIndex = 1;  // Declaration of slide
      
-    showSlides(slideIndex); 
+    showSlides(slideIndex); // Showing the slide
 
     
     function plusSlides(n)  
@@ -23,9 +23,9 @@
    
         if (n > slides.length) {slideIndex = 1}  // for the length of slides
     
-        if (n < 1) {slideIndex = slides.length}
+        if (n < 1) {slideIndex = slides.length}  // for the length of slides
     
-        for (i = 0; i < slides.length; i++)
+        for (i = 0; i < slides.length; i++) // for the length of slides
         {
             slides[i].style.display = "none"; 
         }
