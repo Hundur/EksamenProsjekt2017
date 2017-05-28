@@ -2,6 +2,8 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
+/* Frontpage */
+
 html 
 {
     background-image: url('img/Vulkan1.jpg');
@@ -22,7 +24,12 @@ html
     top: 20%;
 }
 
-/* Font-family */
+#mainContainer
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 
 html, 
 #heading,
@@ -34,131 +41,6 @@ p
 {
   font-family: 'Raleway', sans-serif;
 } 
-
-/* Slider */ 
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-
-.slide-container 
-{
-    position: fixed;
-    width: 64%;
-    top: 19%;
-    left: 18%;
-    height: 70%;
-    background: #f1f1f1;
-    border: 1px dashed #f1f1f1;
-    outline: 1px solid white;
-    outline-offset: 6px;
-    opacity: 1;
-    overflow: hidden;
-}
-  
-img 
-{
-    opacity: 0.8;
-}
-
-.Slide 
-{
-    display: none;
-}
-
-/* Forward and back buttons */
-
-.back, .forward 
-{
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.forward 
-{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover effect */
-
-.back:hover, .forward:hover 
-{
-  background-color: rgba(0,0,0,0.5);
-}
-
-/* Textbox */
-
-#mainContainer
-{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-.textbox
-{
-    background: rgba(255,255,255,0.7);
-    position: absolute;
-    bottom: 10%;
-    left: 9%;
-    right: 9%;
-    height: 70%;
-    width: 80%;
-    padding: 40px;
-    overflow: hidden;
-}
-
-
-.dots 
-{
-  cursor:pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover 
-{
-    background-color: #717171;
-}
-
-/* Fading animation */
-
-.fade 
-{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;   
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade 
-{
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade 
-{
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-/* Slider End */ 
 
 p 
 {
@@ -179,18 +61,6 @@ h2, p
 }
 
 /* Circle-navbar for frontpage */
-
-
-/* For images inside circles */
-
-
-#icons 
-{
-    position: absolute;
-}
-
-
-/* For text inside circles */
 
 .menutext 
 {
@@ -214,8 +84,10 @@ h2, p
     line-height: 2.0em;
 }
 
-
-/* Circles for index.php */ 
+#icons 
+{
+    position: absolute;
+}
 
 .menucircle 
 {
@@ -299,6 +171,105 @@ h2, p
         border: 2px solid transparent;
     }
 }
+
+
+/* Slider */ 
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.slide-container 
+{
+    position: fixed;
+    width: 64%;
+    top: 19%;
+    left: 18%;
+    height: 70%;
+    background: #f1f1f1;
+    border: 1px dashed #f1f1f1;
+    outline: 1px solid white;
+    outline-offset: 6px;
+    opacity: 1;
+    overflow: hidden;
+}
+  
+img 
+{
+    opacity: 0.8;
+}
+
+.Slide 
+{
+    display: none;
+}
+
+/* Forward and back buttons */
+
+.back, .forward 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.forward 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover effect */
+
+.back:hover, .forward:hover 
+{
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Fading animation */
+
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;   
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.textbox
+{
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+    right: 9%;
+    height: 70%;
+    width: 80%;
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* Slider End */ 
 
 
 /* Circle-navbar for underpages */ 
@@ -410,9 +381,6 @@ h2, p
  }
 
 /* End of map */
-
-/* Html, body */
-
 
 /* Navigation-bar */ 
 
