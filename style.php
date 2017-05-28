@@ -2,14 +2,16 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
-html {
+html 
+{
     background-image: url('img/Vulkan1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
-#heading {
+#heading 
+{
     position: relative;
     color: #f1f1f1;
     font-size: 2.1em;
@@ -28,7 +30,8 @@ html,
 h2, 
 h3,
 h4,
-p {
+p 
+{
   font-family: 'Raleway', sans-serif;
 } 
 
@@ -36,10 +39,10 @@ p {
 
 * {box-sizing:border-box}
 
-
 /* Slideshow container */
 
-.slide-container {
+.slide-container 
+{
     position: fixed;
     width: 64%;
     top: 19%;
@@ -53,17 +56,20 @@ p {
     overflow: hidden;
 }
   
-img {
+img 
+{
     opacity: 0.8;
 }
 
-.Slide {
+.Slide 
+{
     display: none;
 }
 
 /* Forward and back buttons */
 
-.back, .forward {
+.back, .forward 
+{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -77,14 +83,16 @@ img {
   border-radius: 0 3px 3px 0;
 }
 
-.forward {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.forward 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover effect */
 
-.back:hover, .forward:hover {
+.back:hover, .forward:hover 
+{
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -111,7 +119,8 @@ img {
 }
 
 
-.dots {
+.dots 
+{
   cursor:pointer;
   height: 12px;
   width: 12px;
@@ -122,41 +131,48 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active, .dot:hover 
+{
+    background-color: #717171;
 }
 
 /* Fading animation */
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;   
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@-webkit-keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /* Slider End */ 
 
-p {
-  font-size: 1.2em;
+p 
+{
+    font-size: 1.2em;
 }
 
-p a {
-  font-family: 'Helvetica Neue', sans-serif;
-  letter-spacing: -0.1pt;
+p a 
+{
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: -0.1pt;
 }
 
-h2, p { 
+h2, p 
+{ 
   font-weight: 300;
   text-align: center;
 
@@ -168,14 +184,16 @@ h2, p {
 /* For images inside circles */
 
 
-#icons {
+#icons 
+{
     position: absolute;
 }
 
 
 /* For text inside circles */
 
-.menutext {
+.menutext 
+{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -190,7 +208,8 @@ h2, p {
     margin-top: -0.5em;
 }
 
-#menutext1 {
+#menutext1
+{
     padding-top: 28%;
     line-height: 2.0em;
 }
@@ -198,7 +217,8 @@ h2, p {
 
 /* Circles for index.php */ 
 
-.menucircle {
+.menucircle 
+{
     position: absolute;
     text-align: center;
     height: 145px;
@@ -210,61 +230,70 @@ h2, p {
     transition: width 0s, height 0s, transform 0s;
 }
 
-.menucircle:hover {
+.menucircle:hover
+{
     width: 155px;
     height: 155px;
 }
 
-#food {
+#food
+{
     left: 30%;
     margin-left: -60px;
     top: 36%;
     background-color: #7d5179;
 }
 
-#transport {
+#transport
+{
     left: 40%;
     margin-left: -60px;
     top: 54.6%;
     background-color: #6aafc8;
 }
 
-#shopping {
+#shopping
+{
     left: 50%;
     margin-left: -60px;
     top: 36%;
     background-color: #ff5252;
 }
 
-#activities {
+#activities
+{
     left: 60%;
     margin-left: -60px;
     top: 54.6%;
     background-color: #ffd460;
 }
 
-#contact {
+#contact
+{
     left: 70%;
     margin-left: -60px;
     top: 36%;
     background-color: #8ac394;
 }
 
-#icons {
+#icons
+{
     position: absolute;
 }
 
 /* End circle-navbar frontpage */ 
 
-
 /* Circle-navbar frontpage Responsive */ 
 
-@media screen and (max-width: 480px) {
-#heading {
-    left: 5%;
+@media screen and (max-width: 480px)
+{
+    #heading 
+    {
+        left: 5%;
+    }    
 
-}    
-.menucircle {
+.menucircle 
+    {
         height: 60px;
         width: 60px;
         border: 2px solid transparent;
@@ -274,8 +303,9 @@ h2, p {
 
 /* Circle-navbar for underpages */ 
 
-.menucircle2 { 
- position: fixed;
+.menucircle2 
+{ 
+    position: fixed;
     text-align: center;
     height: 59px;
     width: 59px;
@@ -288,7 +318,8 @@ h2, p {
     transition: all 200ms linear;
 }
 
-.menucircle2:hover {
+.menucircle2:hover
+{
     width: 70px;
 }
 
@@ -299,32 +330,37 @@ h2, p {
     right: 25%;
 }
 
-#food2 {
+#food2
+{
     top: 30%;
     left: 8%;
     text-algin: center;
     background-color: #7d5179;
 }
 
-#transport2 {
+#transport2
+{
     top: 43.5%;
     left: 8%;
     background-color: #6aafc8;
 }
 
-#shopping2 {
+#shopping2
+{
     top: 57.3%;
     left: 8%;
     background-color: #ff5252;
 }
 
-#activities2 {
+#activities2
+{
     top: 70.6%;
     left: 8%;
     background-color: #8ac394;
 }
 
-#contact2 {
+#contact2 
+{
     top: 81%;
     left: 5%;
     background-color: #8ac394;
@@ -332,14 +368,15 @@ h2, p {
 
 /* End of circle-navbar for underpages */ 
 
-}
+@media screen and (max-width: 480px) 
+{
+    #heading
+    {
+        left: 5%;
+    }    
 
-@media screen and (max-width: 480px) {
-#heading {
-    left: 5%;
-
-}    
-.menucircle2 {
+    .menucircle2 
+    {
         height: 60px;
         width: 60px;
         border: 2px solid transparent;
@@ -365,10 +402,11 @@ h2, p {
 
 /* Map */
 
-#Kart {
-     position: absolute;
-     width: 100%;
-     opacity: 1;
+#Kart
+{
+    position: absolute;
+    width: 100%;
+    opacity: 1;
  }
 
 /* End of map */
@@ -378,70 +416,78 @@ h2, p {
 
 /* Navigation-bar */ 
 
- ol,
- ul {
+ol,
+ul 
+{
     margin: 0;
     padding: 0;
- }
+}
  
- ul,
- ol {
+ul,
+ol 
+{
     list-style: none;
- }
+}
  
- a {
+a 
+{
     text-decoration: none;
- }
+}
  
- .clearfix {
+.clearfix 
+{
     clear: both;
- }
+}
 
- /* End Reset Some Elements */
+/* End Reset Some Elements */
  
- 
-.nav {
+.nav 
+{
     background-color: #f1f1f1;
     opacity: 1;
- }
+}
  
- .container {
+.container 
+{
     width: 65%;
     margin: 0 auto;
- }
+}
 
- /* Start Toggle */
+/* Start Toggle */
  
   
- .toggle {
+.toggle 
+{
     width: 30px;
     padding-top: 15px;
     float: right;
     margin: 3px;
     cursor: pointer;
     display: none;
- } 
+} 
  
- .toggle span {
+.toggle span 
+{
     width: 100%;
     height: 4px;
     background-color: #222;
     display: block;
     margin-bottom: 3px;
- }
+}
 
- /* End Toggle */
+/* End Toggle */
 
 
 
 /* Start Logo */
 
- .nav .container .logo {
+.nav .container .logo 
+{
     width: 5%;
     float: left;
     padding-top: 0px;
     padding-bottom: 0px;
- }
+}
  
 /* End Logo */
 
@@ -449,11 +495,12 @@ h2, p {
 
 /* Start Title */
 
-#title {
-  display: inline-block;
-  padding: 23px;
-  float: left;
-  text-transform: uppercase;
+#title 
+{
+    display: inline-block;
+    padding: 23px;
+    float: left;
+    text-transform: uppercase;
 }
 
 /* End Title */
@@ -461,52 +508,62 @@ h2, p {
  
 /* Start Links */
  
- .nav .container .links {
+.nav .container .links 
+{
     width: 45%;
     float: right;
- }
+}
  
- .nav .container .links ul {
+.nav .container .links ul 
+{
     float: center;
- }
+}
  
- .nav .container .links ul li {
+.nav .container .links ul li 
+{
     display: inline-block;
     padding: 20px;
- }
+}
  
- .nav .container .links ul li a {
+.nav .container .links ul li a 
+{
     color: #333;
     font-size: 0.7em;
     font-family: Raleway;
     text-transform: uppercase;
     letter-spacing: 0.8pt;
- }
-
-.nav .container .links ul li a:hover {
-   color: #ccc;
-   padding: 10px 0 10px;
 }
- /* End Links */
 
- 
+.nav .container .links ul li a:hover 
+{
+    color: #ccc;
+    padding: 10px 0 10px;
+}
 
-@media(max-width:768px) {
-    .toggle {
-       display: block;
+/* End Links */
+
+@media(max-width:768px) 
+{
+    .toggle 
+    {
+        display: block;
     }
-    .links {
-       display: none;
+    .links 
+    {
+        display: none;
     }
-    .nav .container .links ul li {
-       display: block;
-       text-align: center;
-       padding: 10px;
+    .nav .container .links ul li 
+    {
+        display: block;
+        text-align: center;
+        padding: 10px;
     }
-    .nav .container .links ul {
-       float: none;
+    .nav .container .links ul 
+    {
+        float: none;
     }
-    .nav .container .logo {
-       padding-top: 10px;
+    .nav .container .logo
+    {
+        padding-top: 10px;
     }
- }
+}

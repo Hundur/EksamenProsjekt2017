@@ -14,17 +14,17 @@
     
 	<body>
         <?php 
-            require 'Connect.php';
-            include_once('header.php');
+            require 'Connect.php'; /* Filen for å koble til database */
+            include_once('header.php'); /* Header for hele nettsiden (går igien)*/
             $slides = [];
-            $query = mysqli_query($con,'SELECT * FROM lokasjoner WHERE KategoriID = 1');
-            while($rows = mysqli_fetch_assoc($query))   
+            $query = mysqli_query($con,'SELECT * FROM lokasjoner WHERE KategoriID = 1'); /* Spørring som fetcher data fra DB */
+            while($rows = mysqli_fetch_assoc($query))   /* While loop som fetcher data fra databasen DB så får row verdien */
             {
                 $slides[] = $rows;
             };
-            require 'sideknapper.php';
-            require 'slides.php';
-            require 'slidescript.php';
+            require 'sideknapper.php'; /* Sidebar for nettsiden */
+            require 'slides.php'; /* Slides for nettsiden */
+            require 'slidescript.php'; /* Javascript for slides */
         ?> 
     </body>
 </html>              
