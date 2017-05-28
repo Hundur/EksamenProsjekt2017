@@ -2,6 +2,23 @@
     header('Content-type: text/css; charset:UTF-8');
 ?>
 
+html {
+    background-image: url('img/Vulkan1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#heading {
+    position: relative;
+    color: #f1f1f1;
+    font-size: 2.1em;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4pt;
+    top: 20%;
+}
 
 /* Font-family */
 
@@ -27,7 +44,7 @@ p {
     width: 64%;
     top: 19%;
     left: 18%;
-    height: 670px;
+    height: 70%;
     background: #f1f1f1;
     border: 1px dashed #f1f1f1;
     outline: 1px solid white;
@@ -144,26 +161,6 @@ h2, p {
   text-align: center;
 
 }
-
-
-html {
-    background-image: url('img/Vulkan1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-
-#heading {
-    position: relative;
-    color: #f1f1f1;
-    font-size: 2.1em;
-    font-weight: 200;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4pt;
-    top: 20%;
-}
-
 
 /* Circle-navbar for frontpage */
 
