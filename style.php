@@ -27,7 +27,7 @@ p {
     width: 64%;
     top: 19%;
     left: 18%;
-    height: 470px;
+    height: 670px;
     background: #f1f1f1;
     border: 1px dashed #f1f1f1;
     outline: 1px solid white;
@@ -130,6 +130,10 @@ img {
 
 /* Slider End */ 
 
+p {
+  font-size: 1.2em;
+}
+
 p a {
   font-family: 'Helvetica Neue', sans-serif;
   letter-spacing: -0.1pt;
@@ -138,6 +142,7 @@ p a {
 h2, p { 
   font-weight: 300;
   text-align: center;
+
 }
 
 
@@ -290,6 +295,13 @@ html {
     width: 70px;
 }
 
+.underikoner 
+{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
 #food2 {
     top: 30%;
     left: 8%;
@@ -376,6 +388,7 @@ html {
      position: relative;
      top: 350px;
      left: 210px;
+     align: 
  }
  
  #Mollerveien:hover ~ #MV{
@@ -553,7 +566,7 @@ html {
  }
 
 .nav .container .links ul li a:hover {
-   color: #f1f1f1;
+   color: #ccc;
    padding: 10px 0 10px;
 }
  /* End Links */
@@ -579,3 +592,15 @@ html {
        padding-top: 10px;
     }
  }
+.about
+{
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+    right: 9%;
+    height: 80%;
+    width: 80%;
+    padding: 40px;
+    overflow: hidden;
+}

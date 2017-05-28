@@ -11,10 +11,3 @@ $dbcon = mysqli_select_db($con, $db);
 
 mysqli_set_charset($con,"UTF8");
 
-
-/*if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-} 
-echo "Connected successfully";
-*/
-?> 
